@@ -49,14 +49,14 @@ Performed in Power Query:
 
 ### Common Measures:
 Dax
--Total Cost = SUMX('Energy Consumptions', 'Energy Consumptions'[Units] * RELATED(Rates[Price Per Unit]))
--Unit Consumed = SUM('Energy Consumptions'[Units])
+- Total Cost = SUMX('Energy Consumptions', 'Energy Consumptions'[Units] * RELATED(Rates[Price Per Unit]))
+- Unit Consumed = SUM('Energy Consumptions'[Units])
 
--Water Cost = CALCULATE([Total Cost], Rates[Energy Type]="Water")
--Water Cost Left = [Total Cost] - [Water Cost]
--Water Unit Consumed = CALCULATE([Unit Consumed], Rates[Energy Type]="Water")
--% of Water Consumed = [Water Unit Consumed] / [Unit Consumed]
--Water Unit Consumed Left = [Unit Consumed] - [Water Unit Consumed]
+- Water Cost = CALCULATE([Total Cost], Rates[Energy Type]="Water")
+- Water Cost Left = [Total Cost] - [Water Cost]
+- Water Unit Consumed = CALCULATE([Unit Consumed], Rates[Energy Type]="Water")
+- % of Water Consumed = [Water Unit Consumed] / [Unit Consumed]
+- Water Unit Consumed Left = [Unit Consumed] - [Water Unit Consumed]
 
 Electricity and Gas:
 Similar DAX formulas used by replacing the energy type.
