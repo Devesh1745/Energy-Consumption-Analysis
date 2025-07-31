@@ -51,13 +51,14 @@ I used Power Query in Power BI to clean and prepare the data:
 ### Total Cost and Units:
 Dax
 - Total Cost = SUMX('Energy Consumptions', 'Energy Consumptions'[Units] * RELATED(Rates[Price Per Unit]))
-- Unit Consumed = SUM('Energy Consumptions'[Units])
+- Unit Consumed = SUM('Energy Consumptions'[Units])\
+### Water:
 - Water Cost = CALCULATE([Total Cost], Rates[Energy Type] = "Water")
 - Water Cost Left = [Total Cost] - [Water Cost]
 - Water Unit Consumed = CALCULATE([Unit Consumed], Rates[Energy Type] = "Water")
 - % of Water Consumed = [Water Unit Consumed] / [Unit Consumed]
 - Water Unit Consumed Left = [Unit Consumed] - [Water Unit Consumed]
-  (Similar formulas were created for Electricity and Gas.)
+#### Similar formulas were created for Electricity and Gas
 
 ## 🔍 Key Insights
 - Water was used the most and had the highest cost. It might be overused.
