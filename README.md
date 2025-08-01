@@ -37,16 +37,15 @@ I used Power Query in Power BI to clean and prepare the data:
 ---
 
 ## 📊 Key Visuals
-| Visual Type    | What It Shows |
-|----------------|----------------|
-| KPI Cards      | Total Cost, Units Consumed, % of Use |
-| Bar Charts     | Cost and Units by City |
-| Line Charts    | Monthly Trend of Usage and Cost |
-| Tooltips       | Extra details when hovering over charts |
+
+ KPI Cards    -  Total Cost, Units Consumed, % of Use 
+ Bar Charts   - Cost and Units by City 
+ Line Charts  - Monthly Trend of Usage and Cost 
+ Tooltips     - Extra details when hovering over charts 
 
 ---
 
-## 📈 DAX Measures (Formulas Used)
+## 📈 DAX Measures
 
 ### Total Cost and Units:
 Dax
